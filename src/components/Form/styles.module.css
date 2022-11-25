@@ -4,8 +4,6 @@
     display: flex;
     gap: 0.5rem;
     align-items: center;
-
-    padding: 0 1rem;
     margin-top: calc(0px - 3.6rem / 2)
 }
 

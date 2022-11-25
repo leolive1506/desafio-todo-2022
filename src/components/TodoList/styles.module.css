@@ -1,0 +1,48 @@
+.todoList {
+    max-width: 736px;
+    margin: 4.25rem auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info h1,
+.info strong {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+.info h1 {
+    color: var(--blue-200);
+}
+
+.info strong {
+    color: var(--purple-300);
+}
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 1.6rem;
+    padding: 4.25rem 1.6rem;
+    gap: 1.1rem;
+
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+}
+
+.empty svg {
+    width: 3.7rem;
+    height: 3.7rem;    
+}
+
+.empty > div {
+    display: flex;
+    flex-direction: column;
+}

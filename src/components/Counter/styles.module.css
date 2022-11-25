@@ -1,0 +1,10 @@
+.counter {
+    padding: 0.13rem 0.5rem;
+
+    background: var(--gray-400);
+    color: var(--gray-200);
+    border-radius: 999px;
+
+    font-weight: bold;
+    font-size: 0.75rem;
+}

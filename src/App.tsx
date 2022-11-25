@@ -1,7 +1,11 @@
+import { Form } from "./components/Form";
+import { Header } from "./components/Header";
+
 export function App() {
   return (
-    <div>
-      <h1>Limpo</h1>
-    </div>
+    <>
+      <Header />
+      <Form />
+    </>
   )
 }

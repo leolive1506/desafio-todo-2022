@@ -10,6 +10,8 @@
 .listItem {
     display: flex;
     align-items: flex-start;
+    min-width: 100%;
+    justify-content: space-between;
     padding: 1rem;
     gap: 12px;
     background: var(--gray-500);
@@ -79,6 +81,7 @@
 }
 
 .listItem p {
+    justify-self: flex-start;
     color: var(--gray-100);
     font-weight: normal;
     font-size: 0.9rem;
@@ -90,8 +93,8 @@
     border: none;
     background: none;
 
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.7rem;
+    height: 1.7rem;
 
     display: flex;
     justify-content: center;
@@ -105,7 +108,7 @@
 }
 
 .list button svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.6rem;
+    height: 1.6rem;
 }
 

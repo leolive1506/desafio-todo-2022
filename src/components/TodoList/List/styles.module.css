@@ -1,0 +1,111 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-top: 1.6rem;
+    gap: 12px;
+}
+
+.listItem {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 12px;
+    background: var(--gray-500);
+    border-radius: 8px;
+    border: 1px solid var(--gray-400);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.listItem > div {
+    position: relative;
+
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.listItem .check {
+    border: 2px solid var(--blue-200);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    transition: background-color 0.2s;
+}
+
+.check {
+    position: relative;
+}
+
+.listItem .check:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+
+    content: "";
+    height: 21.4%;
+    width: 42.8%;
+    
+    position: absolute;
+    left: 25%;
+    top: 28.5%;
+    
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+.listItem input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.listItem input[type="checkbox"]:checked+.check {
+    background-color: var(--purple-500);
+    border: 0;
+}
+
+.listItem input[type="checkbox"]:hover + .check {
+    background-color: var(--purple-300);
+    border: 0;
+}
+
+.listItem input[type="checkbox"]:checked+.check:after,
+.listItem input[type="checkbox"]:hover + .check:after {
+    opacity: 1;
+}
+
+.listItem p {
+    color: var(--gray-100);
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+.list button {
+    padding: 0.3rem;
+    border-radius: 4px;
+    border: none;
+    background: none;
+
+    width: 1.6rem;
+    height: 1.6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: color 0.1s;
+}
+
+.list button:hover {
+    color: var(--red-500);
+}
+
+.list button svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+

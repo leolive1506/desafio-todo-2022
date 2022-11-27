@@ -2,6 +2,7 @@ import { Counter } from '../Counter'
 
 import styles from './styles.module.css'
 import { EmptyList } from './EmptyList'
+import { List } from './List'
 
 export function TodoList() {
     return (
@@ -16,7 +17,9 @@ export function TodoList() {
                     <Counter />
                 </strong>
             </div>
-            <EmptyList />
+            {/* <EmptyList /> */}
+            <List />
+
         </div>
     )
 }

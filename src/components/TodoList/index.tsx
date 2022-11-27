@@ -16,16 +16,19 @@ interface TodoListProps {
 }
 
 export function TodoList({ tasks, onToggleTaskToCompleted, onDeleteTask }: TodoListProps) {
+    const taskLength = tasks.length
+    const tasksCompleted = tasks.filter(task => task.isCompleted)
+    
     return (
         <div className={styles.todoList}>
             <div className={styles.info}>
                 <h1>
                     Tarefas criadas
-                    <Counter />
+                    <Counter title={taskLength} />
                 </h1>
                 <strong>
                     Concluídas
-                    <Counter />
+                    <Counter title={`${tasksCompleted.length} de ${taskLength}`} />
                 </strong>
             </div>
             {tasks.length === 0 ? <EmptyList /> : (
